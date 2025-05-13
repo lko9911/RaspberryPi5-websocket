@@ -8,7 +8,7 @@ async def handler(websocket):
         print("Received IK solution:", data)
 
 async def main():
-    server = await websockets.serve(handler, "0.0.0.0", 8765)
+    server = await websockets.serve(handler, "0.0.0.0", 8766)
     await server.wait_closed()
 
 if __name__ == "__main__":
